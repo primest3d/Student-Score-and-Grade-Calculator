@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score and Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Results</h1>
+            <p>Calculate student scores, averages and grades.</p>
+        </header>
+
+        <div class="form-container">
+            <h2>Enter Student Results</h2>
+
+            <form id="resultForm">
+
+                <label for="name">Student Name</label>
+                <input type="text" id="name">
+                <small id="nameError"></small>
+
+                <label for="subject1">English Language</label>
+                <input type="number" id="subject1">
+                <small id="subject1Error"></small>
+
+                <label for="subject2">Mathematics</label>
+                <input type="number" id="subject2">
+                <small id="subject2Error"></small>
+
+                <label for="subject3">Computer Science</label>
+                <input type="number" id="subject3">
+                <small id="subject3Error"></small>
+
+                <label for="subject4">Biology</label>
+                <input type="number" id="subject4">
+                <small id="subject4Error"></small>
+
+                <label for="subject5">Physics</label>
+                <input type="number" id="subject5">
+                <small id="subject5Error"></small>
+
+                <button type="submit">Calculate Result</button>
+
+            </form>
+        </div>
+
+        <div class="results-container">
+            <h2>Student Results Table</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>English</th>
+                            <th>Maths</th>
+                            <th>Computer</th>
+                            <th>Biology</th>
+                            <th>Physics</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultTable">
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">No results have been calculated yet.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
